@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Trade Journal</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Trade Journal</h1>
+    <form id="tradeForm">
+      <label for="ticker">Ticker:</label>
+      <input type="text" id="ticker" name="ticker" required>
+
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" required>
+
+      <label for="price">Price:</label>
+      <input type="number" id="price" name="price" step="0.01" required>
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <button type="submit">Add Trade</button>
+    </form>
+    <div id="tradesList"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
